@@ -1,0 +1,12 @@
+name: Scheduled Workflow
+
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+
+jobs:
+  scheduled-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - run: echo "Runs every 10 minutes"
